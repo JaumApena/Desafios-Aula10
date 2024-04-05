@@ -1,65 +1,64 @@
 package desafiosAula10;
-
 import java.util.Scanner;
 
-public class desafio02 {
+public class atividade02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o nome do primeiro aluno: ");
-        String aluno1 = scanner.nextLine();
+        System.out.println("Nome do primeiro aluno: ");
+        String aluno01 = scanner.nextLine();
 
-        System.out.println("Digite sua nota no primeiro bimestre: ");
-        int primeiro = scanner.nextInt();
+        System.out.println("Digite a nota do primeiro bimestre: ");
+        int bi1 = scanner.nextInt();
 
-        System.out.println("Digite sua nota no segundo bimestre: ");
-        int segundo = scanner.nextInt();
-
-        scanner.nextLine();
-
-        System.out.println("Digite o nome do segundo aluno: ");
-        String aluno2 = scanner.nextLine();
-
-        System.out.println("Digite sua nota no primeiro bimestre: ");
-        int primeiro2 = scanner.nextInt();
-
-        System.out.println("Digite sua nota no segundo bimestre: ");
-        int segundo2 = scanner.nextInt();
+        System.out.println("Digite a nota do segundo bimestre: ");
+        int bi2 = scanner.nextInt();
 
         scanner.nextLine();
 
-        System.out.println("Digite o nome do terceiro aluno: ");
-        String aluno3 = scanner.nextLine();
+        System.out.println("Nome do segundo aluno: ");
+        String aluno02 = scanner.nextLine();
 
-        System.out.println("Digite sua nota no primeiro bimestre: ");
-        int primeiro3 = scanner.nextInt();
+        System.out.println("Digite a nota do primeiro bimestre: ");
+        int bi3 = scanner.nextInt();
 
-        System.out.println("Digite sua nota no segundo bimestre: ");
-        int segundo3 = scanner.nextInt();
+        System.out.println("Digite a nota do segundo bimestre: ");
+        int bi4 = scanner.nextInt();
+
+        scanner.nextLine();
+
+        System.out.println("Nome do terceiro aluno: ");
+        String aluno03 = scanner.nextLine();
+
+        System.out.println("Digite a nota do primeiro bimestre: ");
+        int bi5 = scanner.nextInt();
+
+        System.out.println("Digite a nota do segundo bimestre: ");
+        int bi6 = scanner.nextInt();
 
         String[] nomes = new String[3];
-        nomes[0] = aluno1;
-        nomes[1] = aluno2;
-        nomes[2] = aluno3;
+        nomes[0] = aluno01;
+        nomes[1] = aluno02;
+        nomes[2] = aluno03;
 
         int[] notas1 = new int[3];
-        notas1[0] = primeiro;
-        notas1[1] = primeiro2;
-        notas1[2] = primeiro3;
+        notas1[0] = bi1;
+        notas1[1] = bi3;
+        notas1[2] = bi5;
 
         int[] notas2 = new int[3];
-        notas2[0] = segundo;
-        notas2[1] = segundo2;
-        notas2[2] = segundo3;
+        notas2[0] = bi2;
+        notas2[1] = bi4;
+        notas2[2] = bi6;
 
-        double media = (primeiro + segundo) / 2.0;
-        double media2 = (primeiro2 + segundo2) / 2.0;
-        double media3 = (primeiro3 + segundo3) / 2.0;
+        double med = (bi1 + bi2) / 2.0;
+        double med2 = (bi3 + bi4) / 2.0;
+        double med3 = (bi5 + bi6) / 2.0;
 
-        System.out.println("A média do primeiro aluno " + aluno1 + " é: " + media);
-        System.out.println("A média do segundo aluno " + aluno2 + " é: " + media2);
-        System.out.println("A média do terceiro aluno " + aluno3 + " é: " + media3);
+        System.out.println("A média do primeiro aluno " + aluno01 + " é: " + med);
+        System.out.println("A média do segundo aluno " + aluno02 + " é: " + med2);
+        System.out.println("A média do terceiro aluno " + aluno03 + " é: " + med3);
 
         scanner.close();
-    }
+        }
 }
